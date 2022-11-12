@@ -20,21 +20,19 @@ class InputComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(6.0),
-        child: TextField(
-          onSubmitted: onSubmitted,
-          onChanged: onChanged,
-          controller: controllerText,
-          decoration: InputDecoration(
-              labelText: placeHolder,
-              border: border == true
-                  ? OutlineInputBorder(borderRadius: BorderRadius.circular(15))
-                  : InputBorder.none,
-              filled: true),
-        ),
+    return Padding(
+      padding: const EdgeInsets.all(6.0),
+      child: TextField(
+        onSubmitted: onSubmitted,
+        onChanged: onChanged,
+        controller: controllerText,
+        onTap: onTap,
+        decoration: InputDecoration(
+            labelText: placeHolder,
+            border: border == true
+                ? OutlineInputBorder(borderRadius: BorderRadius.circular(15))
+                : InputBorder.none,
+            filled: true),
       ),
     );
   }

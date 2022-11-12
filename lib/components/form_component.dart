@@ -46,9 +46,9 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
           onTap: () {
             dialogCustom(
               widget.controller,
-              widget.controller.listaEmpresaValeu,
-              widget.controller.searchValeuEmpresa,
-              widget.controller.searchValeuAndSetEmpresa,
+              widget.controller.listaParceiroValeu,
+              widget.controller.searchValeuParceiros,
+              widget.controller.searchValeuAndSetParceiros,
             );
           },
           onPressed: () {
@@ -68,9 +68,9 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
           onTap: () {
             dialogCustom(
               widget.controller,
-              widget.controller.listaEmpresaValeu,
-              widget.controller.searchValeuEmpresa,
-              widget.controller.searchValeuAndSetEmpresa,
+              widget.controller.listaProcedimentoValeu,
+              widget.controller.searchValeuProcedimento,
+              widget.controller.searchValeuAndSetProcedimento,
             );
           },
           onPressed: () {
