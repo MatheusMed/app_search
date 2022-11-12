@@ -21,6 +21,14 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
       children: [
         RowInput(
           placeHolder: "Empresa",
+          onTap: () {
+            dialogCustom(
+              widget.controller,
+              widget.controller.listaEmpresaValeu,
+              widget.controller.searchValeuEmpresa,
+              widget.controller.searchValeuAndSetEmpresa,
+            );
+          },
           onPressed: () {
             dialogCustom(
               widget.controller,
@@ -35,6 +43,14 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
         ),
         RowInput(
           placeHolder: "Parceiro",
+          onTap: () {
+            dialogCustom(
+              widget.controller,
+              widget.controller.listaEmpresaValeu,
+              widget.controller.searchValeuEmpresa,
+              widget.controller.searchValeuAndSetEmpresa,
+            );
+          },
           onPressed: () {
             dialogCustom(
               widget.controller,
@@ -49,6 +65,14 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
         ),
         RowInput(
           placeHolder: "Lista de Procedimento",
+          onTap: () {
+            dialogCustom(
+              widget.controller,
+              widget.controller.listaEmpresaValeu,
+              widget.controller.searchValeuEmpresa,
+              widget.controller.searchValeuAndSetEmpresa,
+            );
+          },
           onPressed: () {
             dialogCustom(
               widget.controller,

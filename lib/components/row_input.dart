@@ -9,13 +9,15 @@ class RowInput extends StatelessWidget {
   final TextEditingController? controllerId;
   final TextEditingController? controllerTitle;
   final String placeHolder;
+  final Function()? onTap;
   const RowInput(
       {Key? key,
       required this.onPressed,
       required this.controllerTitle,
       required this.controllerId,
       this.onSubmitted,
-      required this.placeHolder})
+      required this.placeHolder,
+      this.onTap})
       : super(key: key);
 
   @override
@@ -33,6 +35,8 @@ class RowInput extends StatelessWidget {
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.65,
           child: InputComponent(
+            onTap: onTap,
+            border: true,
             placeHolder: placeHolder,
             controllerText: controllerTitle,
             onSubmitted: onSubmitted,
