@@ -1,3 +1,4 @@
+import 'package:app/components/input_componentID.dart';
 import 'package:flutter/material.dart';
 
 import 'input_component.dart';
@@ -22,16 +23,15 @@ class RowInput extends StatelessWidget {
     return Row(
       children: [
         SizedBox(
-          width: MediaQuery.of(context).size.width * 0.3,
-          child: InputComponent(
-            placeHolder: placeHolder,
+          width: MediaQuery.of(context).size.width * 0.2,
+          child: InputComponentID(
             controllerText: controllerId,
             onSubmitted: onSubmitted,
           ),
         ),
         IconButton(onPressed: onPressed, icon: Icon(Icons.search)),
         SizedBox(
-          width: MediaQuery.of(context).size.width * 0.55,
+          width: MediaQuery.of(context).size.width * 0.65,
           child: InputComponent(
             placeHolder: placeHolder,
             controllerText: controllerTitle,
