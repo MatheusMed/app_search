@@ -25,6 +25,7 @@ mixin DialogMixin<T extends StatefulWidget> on State<T> {
                         child: Column(
                           children: [
                             InputComponent(
+                              placeHolder: "Pesquise pelo codigo ou descrição",
                               controllerText: controller.searchText,
                               onChanged: onChanged,
                               onSubmitted: onSubmitted,

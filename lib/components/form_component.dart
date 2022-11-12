@@ -20,6 +20,7 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         RowInput(
+          placeHolder: "Empresa",
           onPressed: () {
             dialogCustom(
               widget.controller,
@@ -33,6 +34,7 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
           onSubmitted: widget.controller.searchValeuAndSetEmpresa,
         ),
         RowInput(
+          placeHolder: "Parceiro",
           onPressed: () {
             dialogCustom(
               widget.controller,
@@ -46,6 +48,7 @@ class _FormComponentState extends State<FormComponent> with DialogMixin {
           onSubmitted: widget.controller.searchValeuAndSetParceiros,
         ),
         RowInput(
+          placeHolder: "Lista de Procedimento",
           onPressed: () {
             dialogCustom(
               widget.controller,

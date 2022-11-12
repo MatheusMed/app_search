@@ -4,8 +4,13 @@ class InputComponent extends StatelessWidget {
   final TextEditingController? controllerText;
   final Function(String)? onChanged;
   final Function(String)? onSubmitted;
+  final String? placeHolder;
   const InputComponent(
-      {Key? key, this.controllerText, this.onChanged, this.onSubmitted})
+      {Key? key,
+      this.controllerText,
+      this.onChanged,
+      this.onSubmitted,
+      required this.placeHolder})
       : super(key: key);
 
   @override
@@ -17,6 +22,7 @@ class InputComponent extends StatelessWidget {
         onChanged: onChanged,
         controller: controllerText,
         decoration: InputDecoration(
+            labelText: placeHolder,
             border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(15))),
       ),
