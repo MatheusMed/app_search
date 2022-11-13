@@ -31,7 +31,7 @@ class InputComponent extends StatelessWidget {
             labelText: placeHolder,
             border: border == true
                 ? OutlineInputBorder(borderRadius: BorderRadius.circular(15))
-                : InputBorder.none,
+                : null,
             filled: true),
       ),
     );
